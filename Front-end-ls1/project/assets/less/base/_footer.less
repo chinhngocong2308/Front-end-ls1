@@ -1,0 +1,135 @@
+/*-----------1.2.1.footer-top -------------*/
+#footer {
+    background-color: @background-ft;
+    // margin-top: 64px;
+    width: 100%;
+    position: relative;
+    .container {
+        padding: 0;
+        width: 100%;
+        max-width: 1140px;
+    }
+}
+#footer::after {
+    content:'';
+    position: absolute;
+    border: 1px solid @gray-footer;
+    bottom: calc(10% + 28px);
+    width: 100%;
+}
+.head-footer {
+    color: @white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 60px;
+    h3 {
+        font-size: 17px;
+    }
+    .about {
+        position: relative;
+    }
+    .navi {
+        position: relative;
+    }
+    .location {
+        position: relative;
+    }
+}
+.about::after {
+    content:'';
+    position: absolute;
+    border: 1px solid @gray-footer;
+    top: 226%;
+    width: 72%;
+}
+.navi::after {
+    content:'';
+    position: absolute;
+    border: 1px solid @gray-footer;
+    top: 226%;
+    width: 79%;
+}
+.location::after {
+    content:'';
+    position: absolute;
+    border: 1px solid @gray-footer;
+    top: 226%;
+    width: 100%;
+}
+.cakewalk-content {
+    color: @gray-footer;
+    margin-top: 50px;
+    width: 73%;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.3px;
+    display: flex;
+    ul li {
+        line-height: 29px;
+        font-size: 13px;
+        a {
+            color: @gray-footer;
+        }
+        a:hover {
+            color: @white;
+        }
+    }
+    .content-1 {
+        width: 50%;
+    }
+    .content-2 {
+        width: 50%;
+        margin-left: 55px;
+        letter-spacing: 0.3px;
+    }
+    .icoi-2 {
+        padding: 6px 12px 0 0 ;
+    }
+    .address {
+        margin-top: -3px;
+        ul li {
+            line-height: 33px;
+            letter-spacing: 0.2px;
+            width: 90%;
+        }
+    }
+}
+.contact-with {
+    margin-top: 22px;
+}
+/*-----------1.2.2.footer-bottom -------------*/
+.footer-bottom {
+    background: @background-ft;
+    height: 97px;
+    .container {
+        padding: 0;
+    }
+}
+.row address {
+    padding-top: 9%;
+    color: @gray-footer;
+    font-size: 14px;
+    a {
+        font-size: 13px;
+    }
+}
+.row .footer-payment {
+    padding-top: 8.5%;
+}
+/*----responsive----*/
+@media all and (max-width:360px) {
+    .head-footer .col-12 {
+        padding: 0 30px 20px 30px;
+    }
+}
+@media all and (max-width:600px) {
+    .head-footer .col-12 {
+        padding: 0 30px 20px 30px;
+    }
+}
+@media all and (max-width:768px) {
+    .head-footer .col-12 {
+        padding: 0 30px 20px 30px;
+    }
+}
