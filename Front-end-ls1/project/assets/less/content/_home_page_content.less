@@ -220,7 +220,7 @@
     font-family: @font-openSan;
 }
 span.price-old {
-    color:@color-default;
+    color: @color-999;
     text-decoration: line-through;
 }
 span.price-real {
@@ -249,8 +249,45 @@ span.price-real {
     }
 }
 /*---responsive---*/
-@media all and (max-width: 500px) {
+@media (min-width:827px) and (max-width: 1136px) {
+    .banner-left .banner-content .title {
+        .transform(-58%, -42%);
+        h2 {
+            width: 140%;
+            font-size: calc(1.8rem);
+        }
+    }
+    .banner-left .banner-content .banner-left__preview--btn {
+        .transform(-80%, 13%);
+    }
+}
+@media (min-width:615px) and (max-width: 827px) {
+    .banner-left .banner-content .title {
+        .transform(-55%, -42%);
+        h2 {
+            font-size: calc(2rem);
+            width: 161%;
+        }
+    }
+    .banner-left .banner-content .banner-left__preview--btn {
+        .transform(-40%, 13%);
+    }
+}
+@media (min-width:504px) and (max-width: 615px) {
+    .banner-left .banner-content .title {
+        .transform(-55%, -42%);
+        h2 {
+            font-size: calc(1.53rem);
+            width: 161%;
+        }
+    }
+    .banner-left .banner-content .banner-left__preview--btn {
+        .transform(-25%, -100%);
+    }
+}
+@media all and (max-width: 503px) {
     .product .product-single {
+        margin-left: 20px;
         text-align: center;
         img {
             width: auto;
@@ -265,11 +302,24 @@ span.price-real {
     .banner-right {
         width: 100%;
         margin-top: 30px;
-        padding-right: 37px;
+        padding-right: 22px;
         padding-left: 5px;
     }
+    .banner-left .banner-content .title {
+        .transform(-65%, -42%);
+        h2 {
+            font-size: 1.5rem;
+            width: 151%;
+        }
+    }
+    .banner-left .banner-content .banner-left__preview--btn {
+        .transform(-40%, -100%);
+    }
+    .banner-right .banner-right__preview-bot .banner-content .banner-left__preview--btn {
+        .transform(-42%, 4%);
+    }
     .row .banner-left {
-        margin: 15px 15px 0 25px;
+        margin: 15px 0 0 25px;
     }
     .product .container .row {
         width: 100%;
@@ -278,12 +328,17 @@ span.price-real {
         padding: 0 30px;
     }
 }    
-@media all and (min-width:1001px) {
+@media (min-width:991px) and (max-width:1007px) {
+    .product .row {
+        width: 100%;
+    }
+}
+@media all and (min-width:991px) {
     .banner-res {
         display: none;
     }
 }
-@media (min-width: 501px) and (max-width:1000px)  {
+@media (min-width: 501px) and (max-width:991px)  {
     .banner-pc {
         display: none;
     }
@@ -379,8 +434,5 @@ span.price-real {
     .responsive
 }
 @media (min-width: 501px) and (max-width:900px) {
-    .responsive
-}
-@media (min-width: 501px) and (max-width:1000px) {
     .responsive
 }

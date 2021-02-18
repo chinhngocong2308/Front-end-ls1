@@ -48,7 +48,7 @@
     &--date {
     position: absolute;
     top: 15%;
-    .transform(-121%, -66%);
+    .transform(-114%, -62%);
     left: 25%;
     height: 60px;
     width: 60px;
@@ -78,9 +78,11 @@
     border: 1px solid @white;
 }
 .single-post__info {
-    padding: 0 17px;
+    padding: 0 20px;
+    background: @white;
+    margin-bottom: -18px;
     .single-post__info--desc {
-        padding: 17px 0 16px 0;
+        padding: 13px 0 16px 0;
         letter-spacing: -0.25px;
         font-size: 16px;
         a {
@@ -103,24 +105,26 @@
 .single-post {
     position: relative;
     width: 100%;
+    height: 100%;
 }
 .single-post:after {
     content: '';
-    border: 1px solid @line-post;
-    top: 81.5%;
+    border-bottom: 1px solid @color-d2d2d2;
+    top: 82%;
     width: 100%;
     position: absolute;
 }
 .single-post__info--status {
-    padding: 35px 0 ;
+    padding: 10% 0 ;
     span {
-        padding-right: 28px;
-        margin-left: -1px;
+        padding-right: 21px;
+        margin-left: 4px;
+        color: @color-d2d2d2;
     }
 }
 .padding-fix {
-    margin-left: 18px;
-    padding-right: 21px;
+    margin-left: 12.5px;
+    padding-right: 14.5px;
     margin-top: 5px;
 }
 .owl-dot {
@@ -135,9 +139,50 @@
 .owl-dots {
     text-align: center;
     margin-left: 26.5px;
+    padding: 1.7% 0;
 }
 .owl-dot:hover, .owl-dot.active {
     background: @color!important;
     height: 15px;
     width: 15px;
+}
+@media (min-width:520px) and (max-width:600px) {
+    .single-post {
+        position: relative;
+        width: 80%;
+        height: 100%;
+        margin: auto;
+    }
+    .owl-dots {
+        padding: 2% 0;
+    }
+}
+@media (min-width:600px) and (max-width: 700px) {
+    .single-post__thumb--date {
+        .transform(-75%, -62%);
+        height: 60px;
+        width: 60px;
+        p {
+            font-size: 0.8rem;
+            .day {
+                line-height: 0px;
+            }
+            .month {
+                line-height: 0px;
+            }
+            margin-right: -5px;
+        }
+    }
+    .single-post__thumb--date p.day {
+        line-height: 0px;
+    }
+    .single-post__thumb--date p.month {
+        line-height: 0px;
+    }
+    .single-post:after {
+        top: 87%;
+    }
+    .owl-dots {
+        padding: 8% 0;
+    }
 }

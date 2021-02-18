@@ -77,7 +77,7 @@
         line-height: 30px;
         font-size: 13px;
         a {
-            color: @gray-footer;
+            color: @color-888;
         }
         a:hover {
             color: @white;
@@ -96,15 +96,32 @@
         letter-spacing: 0.3px;
         padding-left: 50px;
     }
-    .icoi-2 {
-        padding: 6px 13px 0 23px ;
-    }
     .address {
         margin-top: -3px;
+        margin-left: 24px;
+        .street {
+            display: flex;
+            width: 100%;
+        }
+        .icon-street {
+            width: 10%;
+            margin: 4px 7px 0 0;
+        }
+        .street-infor {
+            width: 90%;
+            line-height: 33px;
+        }
         ul li {
             line-height: 33px;
             letter-spacing: 0.2px;
-            width: 90%;
+            display: inline-block;
+            width: 100%;
+            span.phone {
+                padding-left: 16px;
+            }
+            span.mail {
+                padding-left: 10px;
+            } 
         }
     }
 }
@@ -146,7 +163,15 @@
         padding: 0 30px 20px 30px;
     }
     .head-footer {
-        text-align: center;
+        .about {
+            text-align: center;
+        }
+        .cakewalk-content p {
+            text-align: center;
+        }
+        .contact-with {
+            text-align: center;
+        }
         .about::after {
             width: 100%;
             right: 0%;
@@ -163,9 +188,6 @@
         }
         .location {
             padding: 0;
-            .icoi-2 {
-                padding: 0;
-            }
             .address {
                 padding: 0;
             }
@@ -193,4 +215,42 @@
             text-align: center;
         }
     }    
+}
+@media (max-width:766px) {
+    .footer-payment {
+        padding-top: 0%;
+        text-align: center!important;
+    }
+    .row address {
+        padding-top: 2%;
+        color: #545454;
+        font-size: 14px;
+        text-align: center;
+    }
+}
+@media (min-width:991px) and (max-width:1063px) {
+    .footer .footer-top {
+        .col-lg-5 {
+            padding: 0;
+        }
+        .col-lg-3 {
+            padding: 0;
+        }
+    }
+    .location::after {
+        width: 90%;
+    }
+}
+@media (min-width:768px) and (max-width:802px) {
+    .footer .footer-top {
+        .col-lg-5 {
+            padding: 0;
+        }
+        .col-lg-3 {
+            padding: 0;
+        }
+    }
+    .location::after {
+        width: 90%;
+    }
 }
