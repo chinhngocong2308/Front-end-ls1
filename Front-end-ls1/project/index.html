@@ -5,22 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đề 1 | Công Chính</title>
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet/less" type="text/css" href="./assets/less/style.less" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet/less" type="text/css" href="./assets/less/style.less" />
 </head>
 <body>
-    <!----/----header-start------/---------->
-    <div id="header">
+    <!-- header-start -->
+    <div class="header">
         <div class="container-fluid">
             <!-- top-header-desktop -->
             <div class="row">
                 <div class="header__welcome">
-                    <span><i class="far fa-bookmark"></i></i></span>
+                    <span><i class="far fa-bookmark"></i></span>
                     <span><a href="">Welcome to Franco - an e-Commerce PSD Template!</a></span>
                 </div>
                 <div class="header__action">
@@ -35,44 +34,43 @@
                         </li>
                     </ul>
                 </div>
-           </div>
-           <!-- top-header-res -->
+            </div>
            <div class="row">
-               <div class="header_welcome_mobi">
-                    <ul>
-                        <li>
-                            <span><i class="far fa-bookmark"></i></i></span>
-                            <span><a href="">Welcome to Franco - an e-Commerce PSD Template!</a></span>
-                        </li>
-                        <li>
+                <div class="header_welcome-mobi">
+                    <div class="header_welcome-mobi--welcome">
+                        <span><i class="far fa-bookmark"></i></span>
+                        <span><a href="">Welcome to Franco - an e-Commerce PSD Template!</a></span>
+                    </div>
+                    <div class="header_welcome-mobi--action">
+                        <div class="setting text-left">
                             <span><i class="fas fa-cog"></i></span>
                             <span><a href="">Shop Setting</a></span>
-                        </li>
-                        <li>
+                        </div>
+                        <div class="login text-right">
                             <span class="icon-login"><i class="fas fa-lock"></i></span>
                             <span><a href=""> Member Login</a></span>
-                        </li>
-                    </ul>
-               </div>
-           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!----/-----header-end-------/----------->
+    <!-- header-end -->
 
-    <!----/-----header_menu-start----/------->
-    <div id="nav-menu">
+    <!-- header_menu-start -->
+    <div class="nav-menu">
         <div class="container-fluid">
             <!-- desktop -->
             <div class="nav-menu__menupc">
                 <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                    <div class="col-lg-3 col-md-3 text-left">
                         <div class="nav-menu__menupc--logo">
                             <a href="">
-                                <img src="/assets/images/logo/logo1.png" alt="">
+                                <img src="./assets/images/logo/logo1.png" alt="">
                             </a>      
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 text-center">
+                    <div class="col-lg-8 col-md-8 text-left no-padding">
                         <div class="menu">
                             <!--nav pc-->
                             <nav>
@@ -90,74 +88,82 @@
                         
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-12 text-right no-padding">
+                    <div class="col-lg-1 col-md-1 text-right no-padding">
                         <div class="cart-wishlist">
-                            <span><a href="#"><img src="/assets/images/icon/wishlist.png" alt=""></a></span>
-                            <span><a href="#"><img src="/assets/images/icon/cart.png" alt=""></a></span>
+                            <span class="heart"><a href="#"><img src="./assets/images/icon/wishlist.png" alt=""></a></span>
+                            <span class="cart"><a href="#"><img src="./assets/images/icon/cart.png" alt=""></a></span>
                         </div>
                     </div> 
                 </div>
             </div>
             <!-- respon-mobi -->
-            <div class="mb-menu" style="padding: 0; margin-left: 10px;">
+            <div class="mb-menu">
                 <div class="row">
-                    <div class="logo-mb text-left" >
-                        <a href="">
-                            <img src="/assets/images/logo/logo1.png" alt="">
-                        </a>
-                    </div>
-                    <div class="bars text-right">
-                        <div class="search-item text-right">
-                            <span><a href=""><i class="fas fa-search"></i></a></span>
-                        </div>   
-                        <nav class="menu__mobi">
-                            <input type="checkbox" class="nav_input" id="check">
-                            <label for="check" class="checkbtn">
-                            <i class="fas fa-bars"></i>
-                            </label>
-                        <ul>
-                            <label for="check" class="close">
-                                <i class="fas fa-times"></i>
-                            </label> 
-                            <li><a href="">​</a></li>
-                            <li><a href="">home</a></li>
-                            <li><a href="">women</a></li>
-                            <li><a href="">men</a></li>
-                            <li><a href="">about us</a></li>
-                            <li><a href="">blog</a></li>
-                            <li><a href="">collections</a></li>
-                            <li><a href="">contact</a></li>
-                        <div class="menu_mobi--cart_wishlist">
-                                <span><a href="#"><img src="/assets/images/icon/wishlist.png" alt=""></a></span>
-                                <span><a href="#"><img src="/assets/images/icon/cart.png" alt=""></a></span>
+                    <div class="col-xs-6 col-6 no-padding">
+                        <div class="logo-mb text-left" >
+                            <a href="">
+                                <img src="./assets/images/logo/logo1.png" alt="">
+                            </a>
                         </div>
-                        </ul>
-                        <label for="check" class="overlay"></label>
-                        </nav>
+                    </div>
+                    <div class="col-xs-3 col-3">
+                        <div class="search-item">
+                            <span><a href=""><i class="fas fa-search"></i></a></span>
+                        </div>  
+                    </div> 
+                    <div class="col-xs-3 col-3 text-right">
+                        <div class="bars">
+                            <nav class="menu__mobi">
+                                <input type="checkbox" class="nav_input" id="check">
+                                <label for="check" class="checkbtn">
+                                <i class="fas fa-bars"></i>
+                                </label>
+                            <ul>
+                                <li>
+                                    <label for="check" class="close">
+                                        <i class="fas fa-times"></i>
+                                    </label> 
+                                </li>
+                                <li><a href="">​</a></li>
+                                <li><a href="">home</a></li>
+                                <li><a href="">women</a></li>
+                                <li><a href="">men</a></li>
+                                <li><a href="">about us</a></li>
+                                <li><a href="">blog</a></li>
+                                <li><a href="">collections</a></li>
+                                <li><a href="">contact</a></li>
+                                <li class="menu_mobi--cart_wishlist">
+                                    <span><a href="#"><img src="./assets/images/icon/wishlist.png" alt=""></a></span>
+                                    <span><a href="#"><img src="./assets/images/icon/cart.png" alt=""></a></span>
+                                </li>
+                            </ul>
+                            <label for="check" class="overlay"></label>
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!----/-----header_menu-end-----/------>
+    <!-- header_menu-end -->
 
-    <!----/-----home_page-start------/----->
-        <!--home_page--banner-->
-    <div id="banner">
+    <!-- home_page-start -->
+        <!--home_page_banner-->
+    <div class="banner">
         <div class="container">
             <div class="row"> 
                 <div class="banner-left col-lg-8">
-                        <div class="banner-left__ad">
+                        <div class="banner-left__preview">
                             <div class="banner-img">
                                 <a href="">
-                                    <img src="./assets/images/banner/banner01.jpg" width="102.5%" alt="">
+                                    <img src="./assets/images/banner/banner01.jpg" alt="">
                                 </a>
                             </div>
                             <div class="banner-content">
                                 <div class="title">
                                     <h2>Two High-end Materials</h2>
                                 </div>
-                                <div class="banner-left__ad--btn">
+                                <div class="banner-left__preview--btn">
                                     <a class="button" href="">Shop Now</a>
                                 </div>
                             </div>
@@ -165,9 +171,9 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="banner-pc banner-right">
-                        <div class="banner-right__ad1">
+                        <div class="banner-right__preview-top">
                             <div class="banner-img">
-                                    <a href=""><img src="./assets/images/banner/banner021.jpg" width="102.5%"  alt=""></a>
+                                    <a href=""><img src="./assets/images/banner/banner021.jpg" alt=""></a>
                             </div>
                             <div class="banner-content">
                                 <div class="title">
@@ -176,10 +182,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="banner-right__ad2">
+                        <div class="banner-right__preview-bot">
                             <div class="banner-img">
                                <a href="">
-                                    <img src="./assets/images/banner/banner03.jpg" width="102.5%" alt="">   
+                                    <img src="./assets/images/banner/banner03.jpg" alt="">   
                                </a>
                             </div>
                             <div class="banner-content">
@@ -187,7 +193,7 @@
                                     <h3>Folio</h3>
                                     <h2>backpack</h2>
                                 </div>
-                                <div class="banner-left__ad--btn">
+                                <div class="banner-left__preview--btn">
                                     <a class="button" href="">Shop Now</a>
                                 </div>
                             </div>
@@ -196,12 +202,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="banner-mobi banner-right">
+                <div class="banner-res banner-right">
                     <div class="col-md-6 col-sm-6 col-xs-6 col-6">
-                        <div class="banner-right__ad1">
+                        <div class="banner-right__preview-top">
                             <div class="banner-img">
                               <a href="">
-                                <img src="./assets/images/banner/banner021.jpg" width="100%"  alt="">
+                                <img src="./assets/images/banner/banner021.jpg" alt="">
                               </a>
                             </div>
                             <div class="banner-content">
@@ -213,16 +219,16 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-6 col-6">
-                        <div class="banner-right__ad2">
+                        <div class="banner-right__preview-bot">
                             <div class="banner-img">
-                               <a href=""> <img src="./assets/images/banner/banner03-mb.jpg" width="100%" alt=""></a>
+                               <a href=""> <img src="./assets/images/banner/banner03-mb.jpg" alt=""></a>
                             </div>
                             <div class="banner-content">
                                 <div class="title">
                                     <h3>Folio</h3>
                                     <h2 class="h3-fron2">backpack</h2>
                                 </div>
-                                <div class="banner-left__ad--btn">
+                                <div class="banner-left__preview--btn">
                                     <a class="button" href="">Shop Now</a>
                                 </div>
                             </div>
@@ -232,8 +238,8 @@
             </div>
         </div>
     </div>
-        <!--home_page--product-->
-    <div id="product">
+        <!--home_page-product-->
+    <div class="product">
         <div class="container">
             <div class="product__title-area">
                 <h3>franco</h3>
@@ -244,7 +250,7 @@
                     <div class="product-single">
                         <div class="product-single__img">
                             <a href="#">
-                                <img src="./assets/images/product/p01.jpg" width="100%" alt="">
+                                <img src="./assets/images/product/p01.jpg" alt="">
                             </a>
                         </div>
                         <div class="product-single__content">
@@ -267,11 +273,11 @@
                             <div class="product-single__content--add-cart">
                                 <a href="" >Add to cart</a>
                             </div>
-                            <div class="hidenitem">
+                            <!-- <div class="hidenitem">
                                 <p><a href="#"><i class="fa fa-search-plus"></i></a></p>
                                 <p><a href="#"><i class="fa fa-heart"></i></a></p>
                                 <p><a href="#"><i class="fa fa-shopping-basket"></i></a></p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -279,7 +285,7 @@
                     <div class="product-single">
                         <div class="product-single__img">
                             <a href="#">
-                                <img src="./assets/images/product/p02.jpg" width="100%" alt="">
+                                <img src="./assets/images/product/p02.jpg" alt="">
                             </a>
                         </div>
                         <div class="product-single__content">
@@ -302,11 +308,11 @@
                             <div class="product-single__content--add-cart">
                                 <a href="" >Add to cart</a>
                             </div>
-                            <div class="hidenitem">
+                            <!-- <div class="hidenitem">
                                 <p><a href="#"><i class="fa fa-search-plus"></i></a></p>
                                 <p><a href="#"><i class="fa fa-heart"></i></a></p>
                                 <p><a href="#"><i class="fa fa-shopping-basket"></i></a></p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -314,7 +320,7 @@
                     <div class="product-single">
                         <div class="product-single__img">
                             <a href="#">
-                                <img src="./assets/images/product/p03.jpg" width="100%" alt="">
+                                <img src="./assets/images/product/p03.jpg" alt="">
                             </a>
                         </div>
                         <div class="product-single__content">
@@ -336,11 +342,11 @@
                             <div class="product-single__content--add-cart">
                                 <a href="" >Add to cart</a>
                             </div>
-                            <div class="hidenitem">
+                            <!-- <div class="hidenitem">
                                 <p><a href="#"><i class="fa fa-search-plus"></i></a></p>
                                 <p><a href="#"><i class="fa fa-heart"></i></a></p>
                                 <p><a href="#"><i class="fa fa-shopping-basket"></i></a></p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -348,7 +354,7 @@
                     <div class="product-single">
                         <div class="product-single__img">
                             <a href="#">
-                                <img src="./assets/images/product/p04.jpg" width="100%" alt="">
+                                <img src="./assets/images/product/p04.jpg" alt="">
                             </a>
                         </div>
                         <div class="product-single__content">
@@ -371,11 +377,11 @@
                             <div class="product-single__content--add-cart">
                                 <a href="" >Add to cart</a>
                             </div>
-                            <div class="hidenitem">
+                            <!-- <div class="hidenitem">
                                 <p><a href="#"><i class="fa fa-search-plus"></i></a></p>
                                 <p><a href="#"><i class="fa fa-heart"></i></a></p>
                                 <p><a href="#"><i class="fa fa-shopping-basket"></i></a></p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -383,7 +389,7 @@
                     <div class="product-single">
                         <div class="product-single__img">
                             <a href="#">
-                                <img src="./assets/images/product/p05.jpg" width="100%" alt="">
+                                <img src="./assets/images/product/p05.jpg" alt="">
                             </a>
                         </div>
                         <div class="product-single__content">
@@ -406,11 +412,11 @@
                             <div class="product-single__content--add-cart">
                                 <a href="" >Add to cart</a>
                             </div>
-                            <div class="hidenitem">
+                            <!-- <div class="hidenitem">
                                 <p><a href="#"><i class="fa fa-search-plus"></i></a></p>
                                 <p><a href="#"><i class="fa fa-heart"></i></a></p>
                                 <p><a href="#"><i class="fa fa-shopping-basket"></i></a></p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -418,7 +424,7 @@
                     <div class="product-single">
                         <div class="product-single__img">
                             <a href="#">
-                                <img src="./assets/images/product/p06.jpg" width="100%" alt="">
+                                <img src="./assets/images/product/p06.jpg" alt="">
                             </a>
                         </div>
                         <div class="product-single__content">
@@ -441,11 +447,11 @@
                             <div class="product-single__content--add-cart">
                                 <a href="" >Add to cart</a>
                             </div>
-                            <div class="hidenitem">
+                            <!-- <div class="hidenitem">
                                 <p><a href="#"><i class="fa fa-search-plus"></i></a></p>
                                 <p><a href="#"><i class="fa fa-heart"></i></a></p>
                                 <p><a href="#"><i class="fa fa-shopping-basket"></i></a></p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -453,7 +459,7 @@
                     <div class="product-single">
                         <div class="product-single__img">
                             <a href="#">
-                                <img src="./assets/images/product/p07.jpg" width="100%" alt="">
+                                <img src="./assets/images/product/p07.jpg" alt="">
                             </a>
                         </div>
                         <div class="product-single__content">
@@ -475,11 +481,11 @@
                             <div class="product-single__content--add-cart">
                                 <a href="" >Add to cart</a>
                             </div>
-                            <div class="hidenitem">
+                            <!-- <div class="hidenitem">
                                 <p><a href="#"><i class="fa fa-search-plus"></i></a></p>
                                 <p><a href="#"><i class="fa fa-heart"></i></a></p>
                                 <p><a href="#"><i class="fa fa-shopping-basket"></i></a></p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -487,7 +493,7 @@
                     <div class="product-single">
                         <div class="product-single__img">
                             <a href="#">
-                                <img src="./assets/images/product/p08.jpg" width="100%" alt="">
+                                <img src="./assets/images/product/p08.jpg" alt="">
                             </a>
                         </div>
                         <div class="product-single__content">
@@ -510,21 +516,21 @@
                             <div class="product-single__content--add-cart">
                                 <a href="" >Add to cart</a>
                             </div>
-                            <div class="hidenitem">
+                            <!-- <div class="hidenitem">
                                 <p><a href="#"><i class="fa fa-search-plus"></i></a></p>
                                 <p><a href="#"><i class="fa fa-heart"></i></a></p>
                                 <p><a href="#"><i class="fa fa-shopping-basket"></i></a></p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!----/-----home_page-end-----/------>
+    <!-- home_page-end -->
 
-    <!----/-----blog_start------/----->
-    <div id="post">
+    <!-- blog_start -->
+    <div class="post">
         <div class="container no-padding">
             <div class="title text-center">
                 <h3>Latest</h3>
@@ -535,7 +541,7 @@
                     <div class="single-post">
                         <div class="single-post__thumb">
                             <a href="#">
-                                <img src="/assets/images/post/post01.jpg" width="100%"  alt="">
+                                <img src="./assets/images/post/post01.jpg" alt="">
                             </a>
                             <div class="single-post__thumb--date">
                                 <p class="month">Jan</p>
@@ -560,7 +566,7 @@
                     <div class="single-post">
                         <div class="single-post__thumb">
                             <a href="#">
-                                <img src="/assets/images/post/post02.jpg" width="100%"  alt="">
+                                <img src="./assets/images/post/post02.jpg" alt="">
                             </a>
                             <div class="single-post__thumb--date">
                                 <p class="month">Jan</p>
@@ -585,7 +591,7 @@
                     <div class="single-post">
                         <div class="single-post__thumb">
                             <a href="#">
-                                <img src="/assets/images/post/post03.jpg" width="100%"  alt="">
+                                <img src="./assets/images/post/post03.jpg" alt="">
                             </a>
                             <div class="single-post__thumb--date">
                                 <p class="month">Jan</p>
@@ -610,7 +616,7 @@
                     <div class="single-post">
                         <div class="single-post__thumb">
                             <a href="#">
-                                <img src="/assets/images/post/post01.jpg" width="100%"  alt="">
+                                <img src="./assets/images/post/post01.jpg" alt="">
                             </a>
                             <div class="single-post__thumb--date">
                                 <p class="month">Jan</p>
@@ -635,7 +641,7 @@
                     <div class="single-post">
                         <div class="single-post__thumb">
                             <a href="#">
-                                <img src="/assets/images/post/post02.jpg" width="100%"  alt="">
+                                <img src="./assets/images/post/post02.jpg" alt="">
                             </a>
                             <div class="single-post__thumb--date">
                                 <p class="month">Jan</p>
@@ -660,7 +666,7 @@
                     <div class="single-post">
                         <div class="single-post__thumb">
                             <a href="#">
-                                <img src="/assets/images/post/post03.jpg" width="100%"  alt="">
+                                <img src="./assets/images/post/post03.jpg" alt="">
                             </a>
                             <div class="single-post__thumb--date">
                                 <p class="month">Jan</p>
@@ -685,7 +691,7 @@
                     <div class="single-post">
                         <div class="single-post__thumb">
                             <a href="#">
-                                <img src="/assets/images/post/post03.jpg" width="100%"  alt="">
+                                <img src="./assets/images/post/post03.jpg" alt="">
                             </a>
                             <div class="single-post__thumb--date">
                                 <p class="month">Jan</p>
@@ -709,16 +715,16 @@
             </div>
         </div>
     </div>
-    <!-----/----blog-end-------/---->
+    <!-- blog-end -->
 
-    <!----/-----footer_start----/------->
-    <div id="footer">
+    <!-- footer_start -->
+    <div class="footer">
         <div class="footer-top">
             <div class="container">
                 <div class="row">
                     <div class="head-footer">
                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-12">
-                            <div class="head-footer__about">
+                            <div class="about">
                                 <h3> About Franco</h3>
                             </div>
                             <div class="cakewalk-content">
@@ -778,12 +784,12 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <div class="container">
+            <div class="container no-padding">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-xs-6 col-6">
+                    <div class="col-lg-6 col-md-6 col-xs-6 col-6 no-padding">
                         <address>©Copyright 2015 & Made with <i class="fas fa-heart" style="color: red;"></i> by <a href="" style="color: white;"> ArrowHitech.</a></address>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-xs-6 col-6">
+                    <div class="col-lg-6 col-md-6 col-xs-6 col-6 no-padding">
                         <div class="footer-payment text-right">
                             <a href="#"><img src="./assets/images/icon/payment.png" alt="" /></a>
                         </div>
@@ -793,7 +799,7 @@
         </div>
     </div>
       
-    <!----/-----footer_end-----/------>
+    <!-- footer_end -->
     <script
         src="http://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
@@ -802,8 +808,8 @@
     <script src="./assets/js/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
     <script src="https://kit.fontawesome.com/b646e5eca5.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script type="text/javascript">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
         $(document).ready(function() {
             $('.owl-carousel').owlCarousel({
                 loop: true,

@@ -1,16 +1,18 @@
 /*-----------1.2.1.footer-top -------------*/
-#footer {
+.footer {
     background-color: @background-ft;
-    // margin-top: 64px;
-    width: 100%;
+    margin-top: 3px;
     position: relative;
     .container {
         padding: 0;
         width: 100%;
         max-width: 1140px;
+        .row {
+            width: 100%;
+        }
     }
 }
-#footer::after {
+.footer::after {
     content:'';
     position: absolute;
     border: 1px solid @gray-footer;
@@ -29,11 +31,17 @@
     .about {
         position: relative;
     }
+    p {
+        width: 73% ;
+    }
     .navi {
         position: relative;
+        padding-left: 8px;
+        
     }
     .location {
         position: relative;
+        padding-left: 21px;
     }
 }
 .about::after {
@@ -60,13 +68,13 @@
 .cakewalk-content {
     color: @gray-footer;
     margin-top: 50px;
-    width: 73%;
+    width: 100%;
     font-size: 14px;
     line-height: 22px;
     letter-spacing: -0.3px;
     display: flex;
     ul li {
-        line-height: 29px;
+        line-height: 30px;
         font-size: 13px;
         a {
             color: @gray-footer;
@@ -76,15 +84,20 @@
         }
     }
     .content-1 {
-        width: 50%;
+        width: 30%;
+        padding-left: 8px;
+        margin-top: -2px;
+        margin-right: 30px;
     }
     .content-2 {
-        width: 50%;
-        margin-left: 55px;
+        width: 70%;
+        float: right;
+        margin-top: -2px;
         letter-spacing: 0.3px;
+        padding-left: 50px;
     }
     .icoi-2 {
-        padding: 6px 12px 0 0 ;
+        padding: 6px 13px 0 23px ;
     }
     .address {
         margin-top: -3px;
@@ -101,21 +114,26 @@
 /*-----------1.2.2.footer-bottom -------------*/
 .footer-bottom {
     background: @background-ft;
-    height: 97px;
+    height: 93px;
     .container {
         padding: 0;
     }
 }
 .row address {
-    padding-top: 9%;
+    padding-top: 8.2%;
     color: @gray-footer;
     font-size: 14px;
     a {
         font-size: 13px;
     }
 }
-.row .footer-payment {
-    padding-top: 8.5%;
+.footer-bottom .row {
+    padding: 0;
+    margin: 0;
+}
+.footer-payment {
+    padding-top: 7.5%;
+    width: 100%;
 }
 /*----responsive----*/
 @media all and (max-width:360px) {
@@ -127,9 +145,52 @@
     .head-footer .col-12 {
         padding: 0 30px 20px 30px;
     }
+    .head-footer {
+        text-align: center;
+        .about::after {
+            width: 100%;
+            right: 0%;
+        }
+        p {
+            width: 100%;
+        }
+        .navi {
+            padding: 0;
+        }
+        .navi::after {
+            width: 100%;
+            right: 0%;
+        }
+        .location {
+            padding: 0;
+            .icoi-2 {
+                padding: 0;
+            }
+            .address {
+                padding: 0;
+            }
+        } 
+        .location::after {
+            width: 100%;
+            right: 0%;
+        }
+    }
 }
-@media all and (max-width:768px) {
+@media (min-width:601px) and (max-width:768px) {
     .head-footer .col-12 {
         padding: 0 30px 20px 30px;
     }
+    .head-footer {
+        .about {
+            text-align: center;
+        }
+        .about::after {
+            width: 100%;
+            right: 0%;
+        }
+        p {
+            width: 100%;
+            text-align: center;
+        }
+    }    
 }

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @font-mont : 'Montserrat', sans-serif;
 @font-openSan : 'Open Sans', sans-serif;
@@ -20,3 +20,42 @@
 @hidden-item-bg:#868686;
 @hover-btn:#c4aaee;
 @btn:#8262b5;
+
+.transform (@_x:-50%,@_y:-50%) {
+	-webkit-transform: translate(@_x,@_y);
+	   -moz-transform: translate(@_x,@_y);
+	    -ms-transform: translate(@_x,@_y);
+	     -o-transform: translate(@_x,@_y);
+	        transform: translate(@_x,@_y);
+}
+.transformX (@_x:-50%) {
+	-webkit-transform: translateX(@_x);
+	   -moz-transform: translateX(@_x);
+	    -ms-transform: translateX(@_x);
+	     -o-transform: translateX(@_x);
+	        transform: translateX(@_x);
+}
+
+.transformY (@_y:-50%) {
+	-webkit-transform: translateY(@_y);
+	   -moz-transform: translateY(@_y);
+	    -ms-transform: translateY(@_y);
+	     -o-transform: translateY(@_y);
+	        transform: translateY(@_y);
+}
+
+.transitionEase (@_x: 0.5s) {
+	-webkit-transition: all @_x ease-in-out;
+	   -moz-transition: all @_x ease-in-out;
+	    -ms-transition: all @_x ease-in-out;
+	     -o-transition: all @_x ease-in-out;
+	        transition: all @_x ease-in-out;
+}
+
+.transition (@_x: 0.5s) {
+	-webkit-transition: all @_x;
+	   -moz-transition: all @_x;
+	    -ms-transition: all @_x;
+	     -o-transition: all @_x;
+	        transition: all @_x;
+}

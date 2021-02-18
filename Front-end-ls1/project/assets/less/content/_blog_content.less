@@ -1,34 +1,38 @@
-#post {
+.post {
     width: 100%;
     .container {
         max-width: 1170px;
     }
-    margin-top: 29px;
+    img {
+        width: 100%;
+    }
+    margin-top: 18px;
     background-image: url('../images/banner/background.png');
     position: relative;
-    height: 702px;
+    height: 707px;
     .title {
-        padding: 64px 0;
+        padding: 68px 0;
         h3 {
             font-weight: bold;
             font-size: 12px;
             text-transform: uppercase;
             color: @color;
             letter-spacing: 6.2px;
-            line-height: 29px;
+            line-height: 37px;
+            margin-left: 6px;
         }
         h2 {
             font-weight: bold;
             font-size: 24px;
             text-transform: uppercase;
             color: @black;
-            letter-spacing: 2px;
-            line-height: 0.5;
-            line-height: 20px;
+            letter-spacing: 2.5px;
+            line-height: 14px;
+            margin-left: 4px;
         }
     }
 }
-#post .title::after{
+.post .title::after{
     position: absolute;
     content: '';
     border-bottom: 1px solid @black;
@@ -36,15 +40,15 @@
     margin-left: -25px;
     margin-top: 21px;
 }
-.single-post__thumb:hover a img {
-    animation: fadeIn;
-    animation-duration: 1s;
-}
+// .single-post__thumb:hover a img {
+//     animation: fadeIn;
+//     animation-duration: 1s;
+// }
 .single-post__thumb {
     &--date {
     position: absolute;
     top: 15%;
-    transform: translateY(-60%) translateX(-120%);
+    .transform(-121%, -66%);
     left: 25%;
     height: 60px;
     width: 60px;
@@ -76,8 +80,9 @@
 .single-post__info {
     padding: 0 17px;
     .single-post__info--desc {
-        padding: 17px 0;
-        letter-spacing: -0.2px;
+        padding: 17px 0 16px 0;
+        letter-spacing: -0.25px;
+        font-size: 16px;
         a {
             color: @black;
             font-weight: 500;
@@ -91,7 +96,7 @@
         p {
             margin: 0;
             font-size: 14px;
-            letter-spacing: -0.3px;
+            letter-spacing: -0.25px;
         }
     }
 }

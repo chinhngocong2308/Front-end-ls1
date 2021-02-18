@@ -2,11 +2,11 @@
 .container-fluid { 
     width: 100%;
 }
-#header .container-fluid .row {
+.header .container-fluid .row {
     background-color: @black;
     padding: 0 30px;
 }
-#header .container-fluid div.header {
+.header {
     &__welcome {
     float: left;
     width: 50%;
@@ -38,22 +38,17 @@
             }
         }
     }
-    &_welcome_mobi {
+    &_welcome-mobi {
         float: left;
         width: 100%;
         height: 100%;
         color: @gray;
         font-size: 12px;
-        ul li {
-            display: inline-block;
-            margin-top: 10px;
-            padding-left: 25px;
-            a {
-                color: @gray;
-                font-size: 12px;
-                letter-spacing: 0.6px;
-            }
-        }
+        a {
+            color: @gray;
+            font-size: 12px;
+            letter-spacing: 0.6px;
+        }    
     }
 }
 /*-----------1.1.2 header menu-------------*/
@@ -63,37 +58,35 @@
 .no-padding {
     padding: 0;
 }
-
-#nav-menu {
+.nav-menu {
     margin-top: 20px;
     position: relative;
 }
-#nav-menu::after {
+.nav-menu .container-fluid {
+    width: 100%;
+    padding: 0 30px;
+}
+.nav-menu::after {
     content: '';
     position: absolute;
     border-bottom: 1px solid @black;
     top: calc(77px - 1vw);
     width: 100%;
 }
-#nav-menu .container-fluid {
-    width: 100%;
-    padding: 0 30px;
-}
 .menu {
-    margin-top: 0px;
     width: 100%;
         ul {
             list-style: outside none none;
-            margin: 8px 0;
+            margin: 7px 0;
             li {
                 display: inline-block;
                 flex-wrap: wrap;
+                padding-left: calc(4% - 0.8px) ;
                 a {
                     color: @black2;
                     font-weight: 700;
                     text-transform: uppercase;
-                    padding: 0 calc(2vw - 13px);
-                    font-size: calc(0.5vw + 4.5px);
+                    font-size: calc(0.9rem);
                 }
             }
         }
@@ -104,15 +97,18 @@
 }
 .cart-wishlist {
     padding: 5px 0px ;
-    span {
-        padding: 0px 3% ;
+    .cart{
+        padding-right: 9% ;
+    }
+    .heart {
+        margin-right: 17.2%;
     }
 }    
-div.moblie-menu {
+.moblie-menu {
     margin-left: 120px;
 }    
 .checkbtn {
-    font-family: 30px;
+    font-size: 30px;
     color:@black;
     cursor: pointer;
 }
@@ -120,30 +116,82 @@ div.moblie-menu {
     display: none;
 }
 /*------responsive-------*/
+@media (min-width:952px) and (max-width:1131px) {
+    .menu ul {
+        list-style: outside none none;
+        margin: 8px 0;
+            li {
+                display: inline-block;
+                flex-wrap: wrap;
+                padding-right: calc(0%);
+                padding-left: 2% ;
+             a {
+                color: @black2;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: calc(0.9rem);
+            }
+        }
+    }
+    .cart-wishlist {
+        padding: 5px 0px ;
+        .cart{
+            padding-right: 0% ;
+        }
+        .heart {
+            margin-right: 21%;
+        }
+    }    
+}
 @media all and(min-width:952px) {
     .mb-menu { 
         display: none;
     }
-    .header_welcome_mobi {
+    .header_welcome-mobi {
         display: none;
     }
     .menu-mb-main {
         display: none;
     }
-
 }   
-
 @media all and (max-width:952px) {
     .nav-menu__menupc {
         display: none;
     }
-    #header .header__welcome {
+    .header__welcome {
         display: none;
     }
-    #header .header__action {
+    .header__action {
         display: none;
     }
-    #header {
+    .header {
+        &_welcome-mobi {
+            float: left;
+            width: 100%;
+            height: 100%;
+            font-size: 12px;
+            &--welcome {
+                li a {
+                    color: @gray;
+                    font-size: 12px;
+                    letter-spacing: 0.6px;
+                }
+            }
+            &--action {
+                display: flex;
+               .setting {
+                   width: 50%;
+               }
+               .login {
+                   width: 50%;
+               }
+            }
+        }
+    }
+    .header__action {
+        display: none;
+    }
+    .header {
         position: relative;
     }
     .menu ul {
@@ -165,34 +213,32 @@ div.moblie-menu {
         color: @color;
         text-decoration: none;
     }
-    .search-item span a:hover {
-        color: @color;
-    }
 }
 .mb-menu .row {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    padding: 0; 
+    margin: 0;
 }
-.logo-mb {
-    width: 50%;
-    padding: 0px 15px;
+.mb-menu_action {
+    display: inline-block;
+}
+.search-item {
+    text-align: center;
+    padding-top: 2.5px;
+    padding-left: 50px;
+    font-size: 24px;
+    color: @black;
+    a:hover {
+         color: @color;
+    }
 }
 .bars {
     width: 50%;
     font-size: 30px;
     display: flex;
-    padding: 0 30px;
+    padding: 5px 0 0 100%;
     line-height: 100%;
-    div.search-item {
-        display: flex;
-        span {
-            padding-left: 45px;
-            img {
-                width: 30px;
-            }
-        }
-    }
 }
 /*--mb menu--*/
 @media all and (max-width:952px) {
@@ -210,7 +256,7 @@ div.moblie-menu {
     display: none;
 }
     label {
-        padding-left: 30px;
+        padding: 0 5px;
     }
     .bars ul {
         position: fixed;
@@ -225,10 +271,13 @@ div.moblie-menu {
     nav ul li {
         display: block;
         text-transform: uppercase;
+        a {
+            color: @black;
+            font-weight: bold;
+        }
     }
-    a {
+    .search-item span a {
         color: @black;
-        font-weight: bold;
     }
     .menu__mobi a:hover,a:active {
         text-decoration: none;
