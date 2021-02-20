@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đề 1 | Công Chính</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./assets/fontawesome-pro-5.14.0-web/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet/less" type="text/css" href="./assets/less/style.less" />
+    <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
 <body>
     <!-- header-start -->
@@ -63,14 +69,14 @@
             <!-- desktop -->
             <div class="nav-menu__menupc">
                 <div class="row">
-                    <div class="col-lg-3 col-md-3 text-left">
+                    <div class="col-xl-2 col-lg-3 col-md-3 text-left">
                         <div class="nav-menu__menupc--logo">
                             <a href="">
                                 <img src="./assets/images/logo/logo1.png" alt="">
                             </a>      
                         </div>
                     </div>
-                    <div class="col-lg-8 col-md-8 text-left no-padding">
+                    <div class="col-xl-8 col-lg-7 col-md-8 text-left no-padding text-center">
                         <div class="menu">
                             <!--nav pc-->
                             <nav>
@@ -88,10 +94,10 @@
                         
                         </div>
                     </div>
-                    <div class="col-lg-1 col-md-1 text-right no-padding">
+                    <div class="col-xl-2 col-lg-2 col-md-1 text-right no-padding">
                         <div class="cart-wishlist">
                             <span class="heart"><a href="#"><i class="far fa-heart"></i></a></span>
-                            <span class="cart"><a href="#"><i class="fas fa-shopping-cart"></i></a></span>
+                            <span class="cart"><a href="#"><i class="far fa-shopping-cart"></i></a></span>
                         </div>
                     </div> 
                 </div>
@@ -99,19 +105,20 @@
             <!-- respon-mobi -->
             <div class="mb-menu">
                 <div class="row">
-                    <div class="col-xs-6 col-6 no-padding">
-                        <div class="logo-mb text-left" >
+                    <div class="col-xs-3 col-3 no-padding">
+                        <div class="action-tools">
+                            <span class="heart"><a href="#"><i class="far fa-heart"></i></a></span>
+                            <span class="cart"><a href="#"><i class="far fa-shopping-cart"></i></a></span>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-6 no-padding text-center">
+                        <div class="logo-mb" >
                             <a href="">
                                 <img src="./assets/images/logo/logo1.png" alt="">
                             </a>
                         </div>
-                    </div>
-                    <div class="col-xs-3 col-3">
-                        <div class="search-item">
-                            <span><a href=""><i class="fas fa-search"></i></a></span>
-                        </div>  
                     </div> 
-                    <div class="col-xs-3 col-3 text-right">
+                    <div class="col-xs-3 col-3 no-padding">
                         <div class="bars">
                             <nav class="menu__mobi">
                                 <input type="checkbox" class="nav_input" id="check">
@@ -124,7 +131,14 @@
                                         <i class="fas fa-times"></i>
                                     </label> 
                                 </li>
-                                <li><a href="">​</a></li>
+                                <li class="search-mobi">
+                                    <div class="search-box">
+                                        <a href="#" class="search-btn">
+                                            <i class="fas fa-search"></i>
+                                        </a>
+                                        <input class="search-txt" type="text" name="" placeholder="Type to search">
+                                    </div>
+                                </li>
                                 <li><a href="">home</a></li>
                                 <li><a href="">women</a></li>
                                 <li><a href="">men</a></li>
@@ -132,10 +146,6 @@
                                 <li><a href="">blog</a></li>
                                 <li><a href="">collections</a></li>
                                 <li><a href="">contact</a></li>
-                                <li class="menu_mobi--cart_wishlist">
-                                    <span class="heart"><a href="#"><i class="far fa-heart"></i></a></span>
-                                    <span class="cart"><a href="#"><i class="fas fa-shopping-cart"></i></a></span>
-                                </li>
                             </ul>
                             <label for="check" class="overlay"></label>
                             </nav>
@@ -152,85 +162,48 @@
     <div class="banner">
         <div class="container">
             <div class="row"> 
-                <div class="banner-left col-lg-8">
-                        <div class="banner-left__preview">
-                            <div class="banner-img">
-                                <a href="">
-                                    <img src="./assets/images/banner/banner01.jpg" alt="">
-                                </a>
+                <div class="banner-left col-lg-8 col-md-8 col-sm-12 col-12">
+                    <div class="banner-left__preview">
+                        <div class="banner-img">
+                            <a href="">
+                                <img src="./assets/images/banner/banner01.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="banner-content">
+                            <div class="title">
+                                <h2>Two High-end Materials</h2>
                             </div>
-                            <div class="banner-content">
-                                <div class="title">
-                                    <h2>Two High-end Materials</h2>
-                                </div>
-                                <div class="banner-left__preview--btn">
-                                    <a class="button" href="">Shop Now</a>
-                                </div>
+                            <div class="banner-left__preview--btn">
+                                <a class="button" href="">Shop Now</a>
                             </div>
                         </div>
+                    </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="banner-pc banner-right">
-                        <div class="banner-right__preview-top">
+                <div class="banner-right col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="banner-pc row">
+                        <div class="banner-right__preview-top col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="banner-img">
                                     <a href=""><img src="./assets/images/banner/banner021.jpg" alt=""></a>
-                            </div>
-                            <div class="banner-content">
-                                <div class="title">
-                                    <h3>small thing</h3>
-                                    <h2>make different</h2>
-                                </div>
+                                    <div class="banner-content">
+                                        <div class="title">
+                                            <h3>small thing</h3>
+                                            <h2>make different</h2>
+                                        </div>
+                                    </div>
                             </div>
                         </div>
-                        <div class="banner-right__preview-bot">
+                        <div class="banner-right__preview-bot col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="banner-img">
                                <a href="">
                                     <img src="./assets/images/banner/banner03.jpg" alt="">   
                                </a>
-                            </div>
-                            <div class="banner-content">
+                               <div class="banner-content">
                                 <div class="title">
                                     <h3>Folio</h3>
                                     <h2>backpack</h2>
                                 </div>
-                                <div class="banner-left__preview--btn">
-                                    <a class="button" href="">Shop Now</a>
-                                </div>
+                                <a class="banner-left__preview--btn" href="">Shop Now</a>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="banner-res banner-right">
-                    <div class="col-md-6 col-sm-6 col-xs-6 col-6">
-                        <div class="banner-right__preview-top">
-                            <div class="banner-img">
-                              <a href="">
-                                <img src="./assets/images/banner/banner021.jpg" alt="">
-                              </a>
-                            </div>
-                            <div class="banner-content">
-                                <div class="title">
-                                    <h3>small thing</h3>
-                                    <h2>make different</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-6 col-6">
-                        <div class="banner-right__preview-bot">
-                            <div class="banner-img">
-                               <a href=""> <img src="./assets/images/banner/banner03-mb.jpg" alt=""></a>
-                            </div>
-                            <div class="banner-content">
-                                <div class="title">
-                                    <h3>Folio</h3>
-                                    <h2 class="h3-fron2">backpack</h2>
-                                </div>
-                                <div class="banner-left__preview--btn">
-                                    <a class="button" href="">Shop Now</a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -245,282 +218,270 @@
                 <h3>franco</h3>
                 <h2>featured items</h2>
             </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                    <div class="product-single">
-                        <div class="product-single__img">
-                            <a href="#">
-                                <img src="./assets/images/product/p01.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="product-single__content">
-                            <div class="product-single__content--title">
-                                <h2 class="pro-desc">
-                                    <a href="">Suspendisse id volutpat</a>
-                                </h2>
+            <div class="product-item">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="product-single">
+                            <div class="product-single__img">
+                                <a href="#">
+                                    <img src="./assets/images/product/p01.jpg" alt="">
+                                </a>
+                                <button type="button" class="product-single__content--add-cart">Add to cart</button>
                             </div>
-                            <div class="product-single__content--ratting">
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
+                            <div class="product-single__content">
+                                <div class="product-single__content--title">
+                                    <h2 class="pro-desc">
+                                        <a href="">Suspendisse id volutpat</a>
+                                    </h2>
+                                </div>
+                                <div class="product-single__content--ratting">
+                                    <a href="#" ><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="null-color">☆</span></a>
+                                </div>
+                                <div class="product-single__content--price">
+                                    <span class="price-old">$99.00</span>
+                                    <span class="price-real">$84.00</span>
+                                </div>
+                                <!-- <div class="hidenitem">
+                                    <p><a href="#"><i class="fa fa-search-plus"></i></a></p>
+                                    <p><a href="#"><i class="fa fa-heart"></i></a></p>
+                                    <p><a href="#"><i class="fa fa-shopping-basket"></i></a></p>
+                                </div> -->
                             </div>
-                            <div class="product-single__content--price">
-                                <span class="price-old">$99.00</span>
-                                <span class="price-real">$84.00</span>
-                            </div>
-                            <div class="product-single__content--add-cart">
-                                <a href="" >Add to cart</a>
-                            </div>
-                            <!-- <div class="hidenitem">
-                                <p><a href="#"><i class="fa fa-search-plus"></i></a></p>
-                                <p><a href="#"><i class="fa fa-heart"></i></a></p>
-                                <p><a href="#"><i class="fa fa-shopping-basket"></i></a></p>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                    <div class="product-single">
-                        <div class="product-single__img">
-                            <a href="#">
-                                <img src="./assets/images/product/p02.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="product-single__content">
-                            <div class="product-single__content--title">
-                                <h2 class="pro-desc">
-                                    <a href="">Lorem ipsum dolor</a>
-                                </h2>
-                            </div>
-                            <div class="product-single__content--ratting">
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
-                            </div>
-                            <div class="product-single__content--price">
-                                <span class="price-old">$99.00</span>
-                                <span class="price-real">$84.00</span>
-                            </div>
-                            <div class="product-single__content--add-cart">
-                                <a href="" >Add to cart</a>
-                            </div>
-                            <!-- <div class="hidenitem">
-                                <p><a href="#"><i class="fa fa-search-plus"></i></a></p>
-                                <p><a href="#"><i class="fa fa-heart"></i></a></p>
-                                <p><a href="#"><i class="fa fa-shopping-basket"></i></a></p>
-                            </div> -->
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                    <div class="product-single">
-                        <div class="product-single__img">
-                            <a href="#">
-                                <img src="./assets/images/product/p03.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="product-single__content">
-                            <div class="product-single__content--title">
-                                <h2 class="pro-desc">
-                                    <a href="">Proin sed nulla mi</a>
-                                </h2>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="product-single">
+                            <div class="product-single__img">
+                                <a href="#">
+                                    <img src="./assets/images/product/p02.jpg" alt="">
+                                </a>
+                                <button type="button" class="product-single__content--add-cart">Add to cart</button>
                             </div>
-                            <div class="product-single__content--ratting">
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
+                            <div class="product-single__content">
+                                <div class="product-single__content--title">
+                                    <h2 class="pro-desc">
+                                        <a href="">Lorem ipsum dolor</a>
+                                    </h2>
+                                </div>
+                                <div class="product-single__content--ratting">
+                                    <a href="#" ><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="null-color">☆</span></a>
+                                </div>
+                                <div class="product-single__content--price">
+                                    <span class="price-old">$99.00</span>
+                                    <span class="price-real">$84.00</span>
+                                </div>
+                                <!-- <div class="hidenitem">
+                                    <p><a href="#"><i class="fa fa-search-plus"></i></a></p>
+                                    <p><a href="#"><i class="fa fa-heart"></i></a></p>
+                                    <p><a href="#"><i class="fa fa-shopping-basket"></i></a></p>
+                                </div> -->
                             </div>
-                            <div class="product-single__content--price">
-                                <span class="price-real">$84.00</span>
-                            </div>
-                            <div class="product-single__content--add-cart">
-                                <a href="" >Add to cart</a>
-                            </div>
-                            <!-- <div class="hidenitem">
-                                <p><a href="#"><i class="fa fa-search-plus"></i></a></p>
-                                <p><a href="#"><i class="fa fa-heart"></i></a></p>
-                                <p><a href="#"><i class="fa fa-shopping-basket"></i></a></p>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                    <div class="product-single">
-                        <div class="product-single__img">
-                            <a href="#">
-                                <img src="./assets/images/product/p04.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="product-single__content">
-                            <div class="product-single__content--title">
-                                <h2 class="pro-desc">
-                                    <a href="">Aenean placerat</a>
-                                </h2>
-                            </div>
-                            <div class="product-single__content--ratting">
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
-                            </div>
-                            <div class="product-single__content--price">
-                                <span class="price-old">$99.00</span>
-                                <span class="price-real">$84.00</span>
-                            </div>
-                            <div class="product-single__content--add-cart">
-                                <a href="" >Add to cart</a>
-                            </div>
-                            <!-- <div class="hidenitem">
-                                <p><a href="#"><i class="fa fa-search-plus"></i></a></p>
-                                <p><a href="#"><i class="fa fa-heart"></i></a></p>
-                                <p><a href="#"><i class="fa fa-shopping-basket"></i></a></p>
-                            </div> -->
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                    <div class="product-single">
-                        <div class="product-single__img">
-                            <a href="#">
-                                <img src="./assets/images/product/p05.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="product-single__content">
-                            <div class="product-single__content--title">
-                                <h2 class="pro-desc">
-                                    <a href="">Suspendisse id volutpat</a>
-                                </h2>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="product-single">
+                            <div class="product-single__img">
+                                <a href="#">
+                                    <img src="./assets/images/product/p03.jpg" alt="">
+                                </a>
+                                <button type="button" class="product-single__content--add-cart">Add to cart</button>
                             </div>
-                            <div class="product-single__content--ratting">
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
+                            <div class="product-single__content">
+                                <div class="product-single__content--title">
+                                    <h2 class="pro-desc">
+                                        <a href="">Proin sed nulla mi</a>
+                                    </h2>
+                                </div>
+                                <div class="product-single__content--ratting">
+                                    <a href="#" ><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="null-color">☆</span></a>
+                                </div>
+                                <div class="product-single__content--price">
+                                    <span class="price-old">$99.00</span>
+                                    <span class="price-real">$84.00</span>
+                                </div>
+                                <!-- <div class="hidenitem">
+                                    <p><a href="#"><i class="fa fa-search-plus"></i></a></p>
+                                    <p><a href="#"><i class="fa fa-heart"></i></a></p>
+                                    <p><a href="#"><i class="fa fa-shopping-basket"></i></a></p>
+                                </div> -->
                             </div>
-                            <div class="product-single__content--price">
-                                <span class="price-old">$99.00</span>
-                                <span class="price-real">$84.00</span>
-                            </div>
-                            <div class="product-single__content--add-cart">
-                                <a href="" >Add to cart</a>
-                            </div>
-                            <!-- <div class="hidenitem">
-                                <p><a href="#"><i class="fa fa-search-plus"></i></a></p>
-                                <p><a href="#"><i class="fa fa-heart"></i></a></p>
-                                <p><a href="#"><i class="fa fa-shopping-basket"></i></a></p>
-                            </div> -->
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                    <div class="product-single">
-                        <div class="product-single__img">
-                            <a href="#">
-                                <img src="./assets/images/product/p06.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="product-single__content">
-                            <div class="product-single__content--title">
-                                <h2 class="pro-desc">
-                                    <a href="">Lorem ipsum dolor</a>
-                                </h2>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="product-single">
+                            <div class="product-single__img">
+                                <a href="#">
+                                    <img src="./assets/images/product/p04.jpg" alt="">
+                                </a>
+                                <button type="button" class="product-single__content--add-cart">Add to cart</button>
                             </div>
-                            <div class="product-single__content--ratting">
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
+                            <div class="product-single__content">
+                                <div class="product-single__content--title">
+                                    <h2 class="pro-desc">
+                                        <a href="">Aenean placerat</a>
+                                    </h2>
+                                </div>
+                                <div class="product-single__content--ratting">
+                                    <a href="#" ><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="null-color">☆</span></a>
+                                </div>
+                                <div class="product-single__content--price">
+                                    <span class="price-old">$99.00</span>
+                                    <span class="price-real">$84.00</span>
+                                </div>
+                                <!-- <div class="hidenitem">
+                                    <p><a href="#"><i class="fa fa-search-plus"></i></a></p>
+                                    <p><a href="#"><i class="fa fa-heart"></i></a></p>
+                                    <p><a href="#"><i class="fa fa-shopping-basket"></i></a></p>
+                                </div> -->
                             </div>
-                            <div class="product-single__content--price">
-                                <span class="price-old">$99.00</span>
-                                <span class="price-real">$84.00</span>
-                            </div>
-                            <div class="product-single__content--add-cart">
-                                <a href="" >Add to cart</a>
-                            </div>
-                            <!-- <div class="hidenitem">
-                                <p><a href="#"><i class="fa fa-search-plus"></i></a></p>
-                                <p><a href="#"><i class="fa fa-heart"></i></a></p>
-                                <p><a href="#"><i class="fa fa-shopping-basket"></i></a></p>
-                            </div> -->
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                    <div class="product-single">
-                        <div class="product-single__img">
-                            <a href="#">
-                                <img src="./assets/images/product/p07.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="product-single__content">
-                            <div class="product-single__content--title">
-                                <h2 class="pro-desc">
-                                    <a href="">Proin sed nulla mi</a>
-                                </h2>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="product-single">
+                            <div class="product-single__img">
+                                <a href="#">
+                                    <img src="./assets/images/product/p05.jpg" alt="">
+                                </a>
+                                <button type="button" class="product-single__content--add-cart">Add to cart</button>
                             </div>
-                            <div class="product-single__content--ratting">
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
+                            <div class="product-single__content">
+                                <div class="product-single__content--title">
+                                    <h2 class="pro-desc">
+                                        <a href="">Suspendisse id volutpat</a>
+                                    </h2>
+                                </div>
+                                <div class="product-single__content--ratting">
+                                    <a href="#" ><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="null-color">☆</span></a>
+                                </div>
+                                <div class="product-single__content--price">
+                                    <span class="price-old">$99.00</span>
+                                    <span class="price-real">$84.00</span>
+                                </div>
+                                <!-- <div class="hidenitem">
+                                    <p><a href="#"><i class="fa fa-search-plus"></i></a></p>
+                                    <p><a href="#"><i class="fa fa-heart"></i></a></p>
+                                    <p><a href="#"><i class="fa fa-shopping-basket"></i></a></p>
+                                </div> -->
                             </div>
-                            <div class="product-single__content--price">
-                                <span class="price-real">$84.00</span>
-                            </div>
-                            <div class="product-single__content--add-cart">
-                                <a href="" >Add to cart</a>
-                            </div>
-                            <!-- <div class="hidenitem">
-                                <p><a href="#"><i class="fa fa-search-plus"></i></a></p>
-                                <p><a href="#"><i class="fa fa-heart"></i></a></p>
-                                <p><a href="#"><i class="fa fa-shopping-basket"></i></a></p>
-                            </div> -->
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                    <div class="product-single">
-                        <div class="product-single__img">
-                            <a href="#">
-                                <img src="./assets/images/product/p08.jpg" alt="">
-                            </a>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="product-single">
+                            <div class="product-single__img">
+                                <a href="#">
+                                    <img src="./assets/images/product/p06.jpg" alt="">
+                                </a>
+                                <button type="button" class="product-single__content--add-cart">Add to cart</button>
+                            </div>
+                            <div class="product-single__content">
+                                <div class="product-single__content--title">
+                                    <h2 class="pro-desc">
+                                        <a href="">Lorem ipsum dolor</a>
+                                    </h2>
+                                </div>
+                                <div class="product-single__content--ratting">
+                                    <a href="#" ><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="null-color">☆</span></a>
+                                </div>
+                                <div class="product-single__content--price">
+                                    <span class="price-old">$99.00</span>
+                                    <span class="price-real">$84.00</span>
+                                </div>
+                                <!-- <div class="hidenitem">
+                                    <p><a href="#"><i class="fa fa-search-plus"></i></a></p>
+                                    <p><a href="#"><i class="fa fa-heart"></i></a></p>
+                                    <p><a href="#"><i class="fa fa-shopping-basket"></i></a></p>
+                                </div> -->
+                            </div>
                         </div>
-                        <div class="product-single__content">
-                            <div class="product-single__content--title">
-                                <h2 class="pro-desc">
-                                    <a href="">Aenean placerat</a>
-                                </h2>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="product-single">
+                            <div class="product-single__img">
+                                <a href="#">
+                                    <img src="./assets/images/product/p07.jpg" alt="">
+                                </a>
+                                <button type="button" class="product-single__content--add-cart">Add to cart</button>
                             </div>
-                            <div class="product-single__content--ratting">
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
-                                <a href="#"><span>☆</span></a>
+                            <div class="product-single__content">
+                                <div class="product-single__content--title">
+                                    <h2 class="pro-desc">
+                                        <a href="">Proin sed nulla mi</a>
+                                    </h2>
+                                </div>
+                                <div class="product-single__content--ratting">
+                                    <a href="#" ><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="null-color">☆</span></a>
+                                </div>
+                                <div class="product-single__content--price">
+                                    <span class="price-old"></span>
+                                    <span class="price-real">$84.00</span>
+                                </div>
+                                <!-- <div class="hidenitem">
+                                    <p><a href="#"><i class="fa fa-search-plus"></i></a></p>
+                                    <p><a href="#"><i class="fa fa-heart"></i></a></p>
+                                    <p><a href="#"><i class="fa fa-shopping-basket"></i></a></p>
+                                </div> -->
                             </div>
-                            <div class="product-single__content--price">
-                                <span class="price-old">$99.00</span>
-                                <span class="price-real">$84.00</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="product-single">
+                            <div class="product-single__img">
+                                <a href="#">
+                                    <img src="./assets/images/product/p08.jpg" alt="">
+                                </a>
+                                <button type="button" class="product-single__content--add-cart">Add to cart</button>
                             </div>
-                            <div class="product-single__content--add-cart">
-                                <a href="" >Add to cart</a>
+                            <div class="product-single__content">
+                                <div class="product-single__content--title">
+                                    <h2 class="pro-desc">
+                                        <a href="">Aenean placerat</a>
+                                    </h2>
+                                </div>
+                                <div class="product-single__content--ratting">
+                                    <a href="#" ><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="color-active">☆</span></a>
+                                    <a href="#"><span class="null-color">☆</span></a>
+                                </div>
+                                <div class="product-single__content--price">
+                                    <span class="price-old">$99.00</span>
+                                    <span class="price-real">$84.00</span>
+                                </div>
+                                <!-- <div class="hidenitem">
+                                    <p><a href="#"><i class="fa fa-search-plus"></i></a></p>
+                                    <p><a href="#"><i class="fa fa-heart"></i></a></p>
+                                    <p><a href="#"><i class="fa fa-shopping-basket"></i></a></p>
+                                </div> -->
                             </div>
-                            <!-- <div class="hidenitem">
-                                <p><a href="#"><i class="fa fa-search-plus"></i></a></p>
-                                <p><a href="#"><i class="fa fa-heart"></i></a></p>
-                                <p><a href="#"><i class="fa fa-shopping-basket"></i></a></p>
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -718,29 +679,24 @@
     <!-- blog-end -->
 
     <!-- footer_start -->
-    <div class="footer">
+    <footer class="footer">
         <div class="footer-top">
             <div class="container">
-                <div class="row">
-                    <div class="head-footer">
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-12">
-                            <div class="about">
-                                <h3> About Franco</h3>
-                            </div>
-                            <div class="cakewalk-content">
-                                <p>Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit,elit a lacinia suscipit, orci
-                                    mauris vulputate mi, eu interdum nunc diam at ipsum.</p>
-                            </div>
-                            <div class="contact-with">
-                                <a href=""><img src="./assets/images/icon/icon-contact.png" alt=""></a>
-                            </div>  
+                <div class="head-footer row">
+                        <div class="head-footer__left col-lg-4 col-md-12 col-sm-12 col-xs-12 col-12">
+                            <h6> About Franco</h6>
+                            <p class="footer__text-justify">Aliquam tempor sagittis neque, vel aliquam risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris vulputate mi, eu interdum nunc diam at ipsum.</p>
+                            <span class="Footer__top-1-icon">
+                                <a  href=""><i class="fab fa-twitter"></i></a>
+                                <a  href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a  href=""><i class="fab fa-behance"></i></a>
+                                <a  href=""><i class="fab fa-dribbble"></i></a>
+                            </span>
                         </div>
-                        <div class="col-lg-5 col-md-4 col-sm-6 col-xs-5 col-12">
-                            <div class="navi">
-                                <h3> Navigation</h3>
-                            </div>
-                            <div class="cakewalk-content">
-                                <div class="content-1">
+                        <div class="head-footer__mid col-lg-4 col-md-6 col-sm-6 col-xs-5 col-12">
+                            <h6 class="title-footer">Navigation</h6>
+                            <div class="footer__mid--content row">
+                                <div class="content-1-mid col-lg-6 col-md-6 col-sm-6 col-6">
                                     <ul>
                                         <li><a href="#">Home</a></li>
                                         <li><a href="#">About Us</a></li>
@@ -750,7 +706,7 @@
                                         <li><a href="#">Contact Us</a></li>
                                     </ul>
                                 </div>
-                                <div class="content-2">
+                                <div class="content-2-mid col-lg-6 col-md-6 col-sm-6 col-6">
                                     <ul>
                                         <li><a href="#">FAQs</a></li>
                                         <li><a href="#">Featured Brands</a></li>
@@ -762,57 +718,52 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-7 col-12">
-                            <div class="location">
-                                <h3> Shop Location</h3>
-                            </div>
-                            <div class="cakewalk-content">
-                               <div class="address">
-                                <div class="street">
-                                    <div class="icon-street">
-                                        <img src="./assets/images/icon/icon-street.png" alt="">
-                                    </div>
-                                    <div class="street-infor">
-                                        <span> 500 Hennessy Road Causeway Bay, Hong Kong</span>
-                                    </div> 
-                                </div>
-                                <ul>        
-                                    <li><a href="" target="_blank"><img src="./assets/images/icon/icon-phone.png" alt=""><span class="phone"> +1  23456789</span></a></li>
-                                    <li><a href="" target="_blank"><img src="./assets/images/icon/icon-mail.png" alt=""><span class="mail"> contact@yourdomain.com</span></a></li>
-                                </ul>
-                               </div>
-                            </div>
+                        <div class="head-footer__right col-lg-4 col-md-6 col-sm-6 col-xs-7 col-12">
+                            <h6 class="title-footer">Shop Location</h6>
+                            <ul class="footer-links">
+                                <li class="footer-links__1"><i class="far fa-map"></i>
+                                    <a href="">
+                                    <span style="">500 Hennessy Road <br>
+                                        <section>Causeway Bay, Hong Kong</section>
+                                    </span>
+                                    </a>
+                                </li>
+                                <li class="footer-links__2">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <a href=""><span>+1 23456789</span></a>
+                                </li>
+                                <li class="footer-links__3">
+                                    <i class="far fa-envelope"></i>
+                                    <a href=""><span>Contact@yourdomain.com</span></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
         <div class="footer-bottom">
-            <div class="container no-padding">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-xs-12 col-12 no-padding">
-                        <address>©Copyright 2015 & Made with <i class="fas fa-heart" style="color: red;"></i> by <a href="" style="color: white;"> ArrowHitech.</a></address>
+            <div class="container">
+                <div class="footer__bottom-left row">
+                    <div class="footer__bottom--left col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                        <p class="copyright-text">
+                            <span>© Copyright 2015 &amp; Made with</span> <i style="color: #ff4628;" class="fas fa-heart"></i> by
+                            <a href="#">ArrowHitech</a>.
+                        </p>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-xs-12 col-12 no-padding">
-                        <div class="footer-payment text-right">
-                            <a href="#"><img src="./assets/images/icon/payment.png" alt="" /></a>
-                        </div>
+                    <div class="footer__bottom--right col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                        <ul class="social-icons">
+                            <li><a class="facebook" href="#"><i class="fab fa-cc-visa"></i></a></li>
+                            <li><a class="facebook" href="#"><i class="fab fa-cc-paypal"></i></a></li>
+                            <li><a class="facebook" href="#"><i class="fab fa-cc-mastercard"></i></a></li>
+                            <li><a class="facebook" href="#"><i class="fab fa-cc-discover"></i></a></li>
+                            <li><a class="facebook" href="#"><i class="fab fa-cc-amex"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-      
+    </footer>
     <!-- footer_end -->
-    <script
-        src="http://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-        crossorigin="anonymous"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/jquery.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
-    <script src="https://kit.fontawesome.com/b646e5eca5.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
         $(document).ready(function() {
             $('.owl-carousel').owlCarousel({
@@ -825,11 +776,14 @@
                     360:{
                         items:1
                     },
-                    600:{
+                    768:{
+                        items:2
+                    },
+                    792:{
                         items:2
                     },
                     900:{
-                        items:3
+                        items:2
                     },
                     1000:{
                         items:3

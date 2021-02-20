@@ -23,6 +23,7 @@
 @btn:#8262b5;
 @color-d2d2d2: #d2d2d2;
 @color-888: #888;
+@color-4242: #424242;
 
 .transform (@_x:-50%,@_y:-50%) {
 	-webkit-transform: translate(@_x,@_y);
@@ -61,4 +62,21 @@
 	    -ms-transition: all @_x;
 	     -o-transition: all @_x;
 	        transition: all @_x;
+}
+.flex-box-100 {
+	-webkit-box-flex: 100%;
+	-ms-flex: 100%;
+	flex: 100%;
+	max-width: 100%;
+}
+.flex-box-50 {
+	-webkit-box-flex: 50%;
+	-ms-flex: 50%;
+	flex: 50%;
+	max-width: 100%;
+}
+@media (min-width: 1200px) {
+.container {
+    max-width: 1170px;
+	}
 }
