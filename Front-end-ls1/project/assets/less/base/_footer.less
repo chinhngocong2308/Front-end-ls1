@@ -257,7 +257,7 @@
     .footer .footer-top .head-footer__right {
         padding-left: 8%;
         h6:before {
-            width: 77%;
+            width: 80%;
         }
     }
 }
@@ -266,9 +266,6 @@
         .head-footer__right {
             margin-top: 30px;
             padding-left: 3%;
-            h6:before {
-                width: 80%;
-            }
             .footer-links__1 {
                 height: 30%;
             }
@@ -287,15 +284,18 @@
                 // padding-left: 10px;
             }
         }
-        .head-footer__left {
-            h6:before {
-                width: 80%;
-            }
-        }
+       
     }
 }
-@media (min-width: 992px) and (max-width: 992px) {
-    // .footer .footer-top .head-footer__right {
-    //     padding-left: 95px;
-    // }
+@media (max-width: 575px) {
+    .head-footer__right {
+        h6:before {
+            width: 93%!important;
+        }
+    }
+    .head-footer__mid {
+        h6:before {
+            width: 93%!important;
+        }
+    }
 }
