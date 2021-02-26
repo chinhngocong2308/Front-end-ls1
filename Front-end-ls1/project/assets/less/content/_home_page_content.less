@@ -287,11 +287,11 @@ span.price-real {
         .flex-box-50;
 	    .banner-img {
             padding-right: 15px;
-            height: 80%;
+            height: 61%;
         }
         .banner-content {
             left: calc(42%);
-            top: calc(33.5%);
+            top: calc(26.5%);
         }
     }
     .banner-pc .banner-right__preview-bot {
@@ -301,15 +301,29 @@ span.price-real {
         .flex-box-50;
         .banner-img {
             padding-left: 15px;
-            height: 80%;
+            height: 61%;
         }
         .banner-content {
-            left: calc(23%);
+            left: calc(18%);
             top: calc(19.5%);
         }
     }
 }
 @media (max-width: 768px) {
+    .banner-left .banner-left__preview .banner-content {
+        bottom: 31.2%;
+        width: 48%;
+        left: 33.9%;
+        .title h2 {
+        font-size: calc(1.5rem);
+        }
+    }
+    .banner-content .banner-left__preview--btn {
+        padding: 5px 10px 5px 10px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 600px) {
     .banner-left .banner-left__preview .banner-content {
         bottom: 31.2%;
         width: 60%;
